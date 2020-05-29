@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/start_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/pause_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂停"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/resume_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="继续"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/release_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/delete_audio_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清除缓存"
+        android:textSize="20sp" />
+</LinearLayout>
