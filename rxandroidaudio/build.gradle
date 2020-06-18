@@ -10,20 +10,24 @@ android {
         versionCode 1
         versionName "1.0"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
 
-    }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
         }
     }
 
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
     }
+
+
+
 }
 
 dependencies {
@@ -36,5 +40,8 @@ dependencies {
 
     //常用工具类
     implementation 'com.github.Satsna:AndroidUtilsLibrary:1.0.2'
-
+    //RxAndroidAudio音频播放
+    api 'com.github.piasy:rxandroidaudio:1.6.0'
+    api 'com.github.piasy:AudioProcessor:1.6.0'
+    api 'io.reactivex.rxjava2:rxandroid:2.1.0'
 }

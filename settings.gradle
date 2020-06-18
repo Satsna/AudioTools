@@ -1,1 +1,2 @@
 include ':audio_tool_module', ':example'
+include ':rxandroidaudio'
